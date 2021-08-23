@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/bootstrap.css" />
+<link rel="stylesheet" href="/css/form.css" />
+<title>Criar conta</title>
+</head>
+<body>
+	<main class="container">
+		<section class="row">
+			<div class="col">
+				<form class="mt-4" id="myform">
+					<h3 class="mt-4">Criar Conta</h3>
+					<div class="form-group">
+						<label for="name">Nome</label> 
+						<input type="text" class="form-control" id="name" name="name" placeholder="Seu nome">
+					</div>
+					<div class="form-group">
+						<label for="email">Endereço de email</label> 
+						<input type="email" class="form-control" id="email" name="email" placeholder="Seu email">
+						<small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+					</div>
+					<div class="form-group">
+						<label for="password">Senha</label>
+						<input type="password" class="form-control" id="password" name="password" placeholder="Deve conter entre 8 e 30 caracteres">
+					</div>
+					<button type="submit" class="btn btn-primary" id="btn">Cadastrar</button> ou <a href="/login">Logar</a>
+				</form>
+			</div>
+		</section>
+	</main>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/validate.js"></script>
+	<script src="js/request.js"></script>
+</body>
+</html>

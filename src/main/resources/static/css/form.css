@@ -1,0 +1,16 @@
+body{
+	background-color: #0c2640;
+}
+
+.container{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form{
+	padding: 15px;
+	background-color: white;
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/home.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<title>Lista de Tarefas</title>
+</head>
+<body>
+	<header>
+		<h3>Lista de Tarefas</h3>
+		<nav>
+			<a href="/logout">Sair</a>
+		</nav>
+	</header>
+	<main class="container">
+		<section class="row">
+			<div class="col">
+				<form id="formtask">
+					<div class="form-group">
+						<label for="task" class="mt-4"><h4>Adicionar Tarefa</h4></label> 
+						<input type="text" class="form-control" id="task" name="task" placeholder="Sua Tarefa">
+					</div>
+					<button type="submit" class="btn btn-primary">Cadastar Tarefa</button>
+				</form>
+				<h4 class="mt-4">Tarefas</h4>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Tarefa</th>
+							<th scope="col">Editar</th>
+							<th scope="col">Excluir</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+				
+				<!-- Modal de edição de item -->
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Detalhe da Tarefa</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="taskName" class="col-form-label">Tarefa:</label>
+                                        <input type="text" class="form-control" id="taskName">
+                                    </div>
+                                    <input type="hidden" id="taskId">
+                                    <button type="button" class="btn btn-primary" onclick="update()">Editar</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+			</div>
+		</section>
+	</main>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/taskrequest.js"></script>
+</body>
+</html>
