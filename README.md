@@ -22,7 +22,7 @@ e excluir tarefa.
 - java -jar todoapi-0.0.1-SNAPSHOT.jar
 
 # Link do projeto
-- https://cromws-userapi.herokuapp.com/
+- https://cromws-todoapi.herokuapp.com/
 
 # Autor
 Alexandre De Alves Lima
